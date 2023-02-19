@@ -3,12 +3,16 @@
   /* box-sizing: border-box; */
 }
 
+body {
+  overflow-y: hidden;
+}
+
 .App {
   height: 100vh;
   text-align: center;
-  background-color: #000000;
   overflow: hidden;
-  background-image: url(./assets/images/robots.jpg);
+  background-image: url(./assets/images/robots1.jpg);
+  background-color: #bdb9b9;
   background-size: 100% 100%;
 }
 

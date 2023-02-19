@@ -253,7 +253,6 @@ const Swap = () => {
                     update({tx_hash: null});
                 }
             }
-
         } else if (coinOutput) {
             try {
                 setShowPendingModal(true);

@@ -1,4 +1,5 @@
 .top-bar-container {
+    position: relative;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 50px;
@@ -6,6 +7,12 @@
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: rgba(80, 80, 80, 0.5);
     border-bottom: 1px solid #ffffff;
+    z-index: 4;
+}
+
+.menu-logo {
+    width: 30%;
+    justify-content: flex-start;
 }
 
 .logo-image {
@@ -14,11 +21,17 @@
 
 .menu-link {
     width: fit-content;
+    width: 30%;
+    justify-content: space-between;
 }
 
 .menu-link-item {
     color: #ffffff;
-    margin-left: 80px;
     font-size: 20px;
     cursor: pointer;
+}
+
+.wallet-option {
+    width: 30%;
+    justify-content: flex-end;
 }

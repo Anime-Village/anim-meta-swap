@@ -30,7 +30,7 @@ const SearchModal = ({ show, width, height, effect, style, selectType, onClickAw
                 if (Object.keys(res.data.data).length > 4) {
                     const tokens = Object.keys(res.data.data).map(item => ({ "address": item, "detail": res.data.data[item] }));
                     setTokens(tokens);
-                    tokens.unshift({ address: '0xfac45d4b406d94cddfc48b198839673351cb2bf9', detail: { name: 'Now Meta', symbol: 'NMETA' } });
+                    tokens.unshift({ address: '0x0F6266A9e9214ea129D4A001E9541d643a34C772', detail: { name: 'Oloid', symbol: 'OLOID' } });
                     console.log(tokens);
                 } else {
                     setTokens([{ address: address, detail: res.data.data }]);

@@ -18,16 +18,15 @@ const TopBar = () => {
     }, [account]);
 
     return (
-        <div className="flex space-between align-center top-bar-container">
-            <div className="flex justify-center align-center menu-logo">
+        <div className="flex space-between align-center justify-center top-bar-container">
+            <div className="flex align-center menu-logo">
                 <img className="flex logo-image" src={Logo} />
             </div>
-            <div className="flex justify-center align-center menu-link">
+            <div className="flex space-between align-center menu-link">
                 <div className="flex menu-link-item" onClick={() => update({app: 1})}>Swap</div>
                 <div className="flex menu-link-item" onClick={() => update({app: 2})}>Liquidity Pool</div>
             </div>
-            <div className="flex justify-center align-center wallet-option">
-                <div className="flex wallet-address"></div>
+            <div className="flex align-center wallet-option">
                 <div className="flex wallet-button">
                     <SmoothButton
                         label={!account ? `Wallet Connect` : `Disconnect (${account.substring(0, 5)}...${account.substring(account.length - 5, account.length - 1)})`}
